@@ -126,7 +126,10 @@
             ));
 
             // footer title control
-            $wp_customize->add_setting('futura_footer_title', array());
+            $wp_customize->add_setting('futura_footer_title', array(
+                'default' => '',
+                'sanitize_callback' => 'wp_filter_nohtml_kses'
+            ));
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'futura_title_control', array(
                 'label' => __('Footer title', 'futura'),
                 'section' => 'futura_options',
@@ -137,7 +140,10 @@
             ));
 
             // footer description control
-            $wp_customize->add_setting('futura_footer_description', array());
+            $wp_customize->add_setting('futura_footer_description', array(
+                'default' => '',
+                'sanitize_callback' => 'wp_filter_nohtml_kses'
+            ));
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'futura_description_control', array(
                 'label' => __('Footer description', 'futura'),
                 'section' => 'futura_options',
@@ -154,7 +160,10 @@
             ));
 
             // futura parallax image primary title control
-            $wp_customize->add_setting('parallax_image_primary_title', array());
+            $wp_customize->add_setting('parallax_image_primary_title', array(
+                'default' => '',
+                'sanitize_callback' => 'wp_filter_nohtml_kses'
+            ));
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'parallax_image_primary_title', array(
                 'label' => __('Parallax image primary title', 'futura'),
                 'section' => 'futura_parallax_image',
@@ -174,7 +183,10 @@
             )));
 
             // futura parallax image secondary title control
-            $wp_customize->add_setting('parallax_image_secondary_title', array());
+            $wp_customize->add_setting('parallax_image_secondary_title', array(
+                'default' => '',
+                'sanitize_callback' => 'wp_filter_nohtml_kses'
+            ));
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'parallax_image_secondary_title', array(
                 'label' => __('Parallax image secondary title', 'futura'),
                 'section' => 'futura_parallax_image',

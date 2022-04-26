@@ -9,6 +9,8 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
+
     <div id="menu" class="scrollspy">
         <nav class="navbar-menu white" role="navigation">
             <div class="nav-wrapper container">

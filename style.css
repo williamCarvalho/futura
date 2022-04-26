@@ -1,17 +1,20 @@
 /*
 Theme Name: Futura Develop
-Theme URI: https://wordpress.org/themes/futura/
+Theme URI: https://github.com/williamCarvalho/futura
 Author: Will Carvalho
 Author URI: https://github.com/williamCarvalho
 Description: FUTURA is a clean and objective theme based on Materialize. Simple and direct typography, readable in a wide variety of screen sizes.
+Tags: two-columns, right-sidebar, fluid-layout, flexible-header, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, accessibility-ready, custom-logo
 Version: 2.0.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Tags: two-columns, right-sidebar, fluid-layout, flexible-header, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, accessibility-ready, custom-logo
 Text Domain: futura
 
-Futura WordPress Theme, Copyright (C) 2022, Will Carvalho
-Futura is distributed under the terms of the GNU GPL
+Futura WordPress Theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
 
 /* =WordPress Core
