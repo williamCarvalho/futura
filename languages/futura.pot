@@ -1,0 +1,201 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Futura Develop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-10 00:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.1; wp-5.9.3\n"
+"X-Domain: futura"
+
+#: comments.php:25
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: comments.php:25
+msgid "1 comment"
+msgstr ""
+
+#: archive.php:17 archive.php:22 archive.php:27 archive.php:32 archive.php:37
+#, php-format
+msgid "Archive: %s"
+msgstr ""
+
+#: 404.php:22 search.php:67
+msgid "Back to home page"
+msgstr ""
+
+#: comments.php:103
+msgid "Cancel comment"
+msgstr ""
+
+#: archive.php:12
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: comments.php:97
+msgid "Comment"
+msgstr ""
+
+#: comments.php:115
+msgid "Comments are closed."
+msgstr ""
+
+#: archive.php:50 attachment.php:13 index.php:18 page.php:31 search.php:28
+#: single.php:29
+msgid "Edit"
+msgstr ""
+
+#: functions.php:134
+msgid "Footer description"
+msgstr ""
+
+#: functions.php:123
+msgid "Footer title"
+msgstr ""
+
+#. Name of the theme
+msgid "Futura Develop"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"FUTURA is a clean and objective theme based on Materialize. Simple and "
+"direct typography, readable in a wide variety of screen sizes."
+msgstr ""
+
+#: functions.php:246
+msgid "Futura Meta Box"
+msgstr ""
+
+#: functions.php:99
+msgid "Futura theme options"
+msgstr ""
+
+#: 404.php:13 archive.php:63
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: comments.php:44
+msgid "Leave a comment!"
+msgstr ""
+
+#: functions.php:82
+msgid "Main Menu"
+msgstr ""
+
+#: landing_page.php:30 landing_page.php:62 landing_page.php:99
+#: landing_page.php:150
+msgid "More"
+msgstr ""
+
+#: page.php:42 single.php:44
+msgid "Next"
+msgstr ""
+
+#: comments.php:25
+msgid "No comments"
+msgstr ""
+
+#: 404.php:10
+msgid "Oops! Nothing to see here..."
+msgstr ""
+
+#: search.php:58
+msgid "Oops! Nothing to see here... Try searching again!"
+msgstr ""
+
+#: functions.php:144
+msgid "Parallax image"
+msgstr ""
+
+#: functions.php:163
+msgid "Parallax image primary"
+msgstr ""
+
+#: functions.php:151
+msgid "Parallax image primary title"
+msgstr ""
+
+#: functions.php:183
+msgid "Parallax image secondary"
+msgstr ""
+
+#: functions.php:171
+msgid "Parallax image secondary title"
+msgstr ""
+
+#: page.php:43 single.php:45
+msgid "Previous"
+msgstr ""
+
+#: functions.php:83
+msgid "Primary Footer Menu"
+msgstr ""
+
+#: footer.php:52
+msgid "Proudly powered by"
+msgstr ""
+
+#: index.php:30 search.php:40
+msgid "Read More"
+msgstr ""
+
+#: functions.php:203
+msgid "Right sidebar"
+msgstr ""
+
+#: searchform.php:5
+msgid "Search"
+msgstr ""
+
+#: search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: functions.php:84
+msgid "Secondary Footer Menu"
+msgstr ""
+
+#: functions.php:202
+msgid "Sidebar"
+msgstr ""
+
+#: comments.php:54
+msgid "Submit"
+msgstr ""
+
+#: functions.php:334
+msgid "Subtitle"
+msgstr ""
+
+#: comments.php:13
+msgid "This article is restricted. Enter the password to view comments."
+msgstr ""
+
+#. Author of the theme
+msgid "Will Carvalho"
+msgstr ""
+
+#: comments.php:77
+msgid "Your Email"
+msgstr ""
+
+#: comments.php:66
+msgid "Your Name"
+msgstr ""
+
+#: comments.php:88
+msgid "Your Website URL"
+msgstr ""
