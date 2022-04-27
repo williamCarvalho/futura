@@ -34,7 +34,8 @@
 					)); ?>
 			    </ul>
 
-            <?php endif; ?>
+                <?php futura_comments_pagination();
+            endif; ?>
 
             <?php if ( comments_open() ) : ?>
 
@@ -62,7 +63,7 @@
                                             name='author'
                                             type='text'
                                             value='" . esc_attr($commenter['comment_author']) . "'
-                                            size='30' " . ($req ? 'required' : '') . " $aria_req />
+                                            size='30' " . ($req ? 'required' : '') . " />
                                         <label class='sr-only' for='author'>" . __('Your Name', 'futura') . "*</label>
                                     </p>",
                                     'email' =>
@@ -73,7 +74,7 @@
                                             name='email'
                                             type='text'
                                             value='" . esc_attr($commenter['comment_author_email']) . "'
-                                            size='30' " . ($req ? 'required' : '') . " $aria_req />
+                                            size='30' " . ($req ? 'required' : '') . " />
                                         <label class='sr-only' for='email'>" . __('Your Email', 'futura') . "*</label>
                                     </p>",
                                     'url' =>

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Futura Develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-10 00:08+0000\n"
+"POT-Creation-Date: 2022-04-26 23:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -30,12 +30,20 @@ msgstr ""
 msgid "Archive: %s"
 msgstr ""
 
-#: 404.php:22 search.php:67
+#: 404.php:24 search.php:74
 msgid "Back to home page"
 msgstr ""
 
-#: comments.php:103
+#: functions.php:123
+msgid "Banner"
+msgstr ""
+
+#: comments.php:106
 msgid "Cancel comment"
+msgstr ""
+
+#: functions.php:124
+msgid "Carousel"
 msgstr ""
 
 #: archive.php:12
@@ -47,25 +55,25 @@ msgstr ""
 msgid "Comment"
 msgstr ""
 
-#: comments.php:115
+#: comments.php:118
 msgid "Comments are closed."
 msgstr ""
 
-#: archive.php:50 attachment.php:13 index.php:18 page.php:31 search.php:28
-#: single.php:29
+#: archive.php:52 attachment.php:15 index.php:18 page.php:33 search.php:32
+#: single.php:32
 msgid "Edit"
 msgstr ""
 
-#: functions.php:134
+#: functions.php:148
 msgid "Footer description"
 msgstr ""
 
-#: functions.php:123
+#: functions.php:134
 msgid "Footer title"
 msgstr ""
 
 #. Name of the theme
-msgid "Futura Develop"
+msgid "Futura"
 msgstr ""
 
 #. Description of the theme
@@ -74,15 +82,27 @@ msgid ""
 "direct typography, readable in a wide variety of screen sizes."
 msgstr ""
 
-#: functions.php:246
+#: functions.php:265
 msgid "Futura Meta Box"
 msgstr ""
 
-#: functions.php:99
+#: functions.php:107
 msgid "Futura theme options"
 msgstr ""
 
-#: 404.php:13 archive.php:63
+#: functions.php:120
+msgid "Header type"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://github.com/williamCarvalho"
+msgstr ""
+
+#. URI of the theme
+msgid "https://github.com/williamCarvalho/futura"
+msgstr ""
+
+#: 404.php:13 archive.php:69
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
@@ -90,16 +110,16 @@ msgstr ""
 msgid "Leave a comment!"
 msgstr ""
 
-#: functions.php:82
+#: functions.php:90
 msgid "Main Menu"
 msgstr ""
 
-#: landing_page.php:30 landing_page.php:62 landing_page.php:99
-#: landing_page.php:150
+#: landing_page.php:30 landing_page.php:62 landing_page.php:98
+#: landing_page.php:149
 msgid "More"
 msgstr ""
 
-#: page.php:42 single.php:44
+#: page.php:49 single.php:54
 msgid "Next"
 msgstr ""
 
@@ -111,35 +131,44 @@ msgstr ""
 msgid "Oops! Nothing to see here..."
 msgstr ""
 
-#: search.php:58
+#: search.php:66
 msgid "Oops! Nothing to see here... Try searching again!"
 msgstr ""
 
-#: functions.php:144
+#: functions.php:158
 msgid "Parallax image"
 msgstr ""
 
-#: functions.php:163
+#: functions.php:180
 msgid "Parallax image primary"
 msgstr ""
 
-#: functions.php:151
+#: functions.php:168
 msgid "Parallax image primary title"
 msgstr ""
 
-#: functions.php:183
+#: functions.php:203
 msgid "Parallax image secondary"
 msgstr ""
 
-#: functions.php:171
+#: functions.php:191
 msgid "Parallax image secondary title"
 msgstr ""
 
-#: page.php:43 single.php:45
+#: functions.php:345
+msgid "Password"
+msgstr ""
+
+#: functions.php:343
+msgctxt "post password form"
+msgid "Submit"
+msgstr ""
+
+#: page.php:50 single.php:55
 msgid "Previous"
 msgstr ""
 
-#: functions.php:83
+#: functions.php:91
 msgid "Primary Footer Menu"
 msgstr ""
 
@@ -147,11 +176,11 @@ msgstr ""
 msgid "Proudly powered by"
 msgstr ""
 
-#: index.php:30 search.php:40
+#: index.php:30 search.php:48
 msgid "Read More"
 msgstr ""
 
-#: functions.php:203
+#: functions.php:222
 msgid "Right sidebar"
 msgstr ""
 
@@ -159,16 +188,16 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: search.php:13
+#: search.php:15
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
-#: functions.php:84
+#: functions.php:92
 msgid "Secondary Footer Menu"
 msgstr ""
 
-#: functions.php:202
+#: functions.php:221
 msgid "Sidebar"
 msgstr ""
 
@@ -176,12 +205,18 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: functions.php:334
+#: functions.php:403
 msgid "Subtitle"
 msgstr ""
 
 #: comments.php:13
 msgid "This article is restricted. Enter the password to view comments."
+msgstr ""
+
+#: functions.php:344
+msgid ""
+"This content is password protected. This is a custom message. To view it "
+"please enter your password below:"
 msgstr ""
 
 #. Author of the theme

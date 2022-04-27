@@ -11,23 +11,23 @@ get_header(); ?>
                 <?php while(have_posts()) : the_post();
                     $thumbnail_url = esc_url(wp_get_attachment_url(get_post_thumbnail_id($post))); ?>
 
-                    <div class="carousel-item white-text image" style='<?=$thumbnail_url ? "background-image: url($thumbnail_url)" : "";?>'>
+                    <div class="carousel-item white-text image" style='<?php echo $thumbnail_url ? "background-image: url($thumbnail_url)" : ""; ?>'>
                         <br />
                         <h2 class="header center teal-text text-lighten-2" data-aos="zoom-in" data-aos-delay="250">
-                            <?=get_the_title();?>
+                            <?php echo get_the_title(); ?>
                         </h2>
 
                         <?php if ($subtitle = get_post_meta(get_the_ID(), 'futura-subtitle', true)): ?>
                             <div class="row center">
                                 <h3 class="header col s12 light" data-aos="zoom-in" data-aos-delay="500">
-                                    <?=$subtitle;?>
+                                    <?php echo $subtitle; ?>
                                 </h3>
                             </div>
                         <?php endif; ?>
 
                         <div class="row center">
-                            <a href="<?=esc_url(get_permalink(get_the_ID()));?>" class="btn-large waves-effect waves-light teal lighten-1" data-aos="zoom-in" data-aos-delay="750">
-                                <?=__('More', 'futura');?>
+                            <a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>" class="btn-large waves-effect waves-light teal lighten-1" data-aos="zoom-in" data-aos-delay="750">
+                                <?php echo __('More', 'futura'); ?>
                             </a>
                         </div>
                     </div>
@@ -46,20 +46,20 @@ get_header(); ?>
                 <div class="section no-pad-bot">
                     <div class="container">
                         <h1 class="header center teal-text text-lighten-2" data-aos="zoom-in" data-aos-delay="250">
-                            <?=get_the_title();?>
+                            <?php echo get_the_title(); ?>
                         </h1>
 
                         <?php if ($subtitle = get_post_meta(get_the_ID(), 'futura-subtitle', true)): ?>
                             <div class="row center">
                                 <h2 class="header h5 col s12 light" data-aos="zoom-in" data-aos-delay="500">
-                                    <?=$subtitle;?>
+                                    <?php echo $subtitle; ?>
                                 </h2>
                             </div>
                         <?php endif; ?>
 
                         <div class="row center">
-                            <a href="<?=esc_url(get_permalink(get_the_ID()));?>" class="btn-large waves-effect waves-light teal lighten-1" data-aos="zoom-in" data-aos-delay="750">
-                                <?=__('More', 'futura');?>
+                            <a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>" class="btn-large waves-effect waves-light teal lighten-1" data-aos="zoom-in" data-aos-delay="750">
+                                <?php echo __('More', 'futura'); ?>
                             </a>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ get_header(); ?>
 
                 <?php if ($thumbnail_url = esc_url(wp_get_attachment_url( get_post_thumbnail_id($post)))): ?>
                     <div class="parallax">
-                        <img src="<?=$thumbnail_url?>" alt="<?=get_the_title();?>" />
+                        <img src="<?php echo $thumbnail_url; ?>" alt="<?php echo get_the_title(); ?>" />
                     </div>
                 <?php endif; ?>
             </div>
@@ -85,17 +85,17 @@ get_header(); ?>
                             <div class="col s12 m4">
                                 <div class="icon-block center-align">
                                     <h3 class="center h5" data-aos="fade-up" data-aos-delay="200">
-                                        <?=get_the_title();?>
+                                        <?php echo get_the_title(); ?>
                                     </h3>
 
                                     <p class="light" data-aos="fade-up" data-aos-delay="400">
-                                        <?=futura_get_excerpt(20);?>
+                                        <?php echo futura_get_excerpt(20); ?>
                                     </p>
 
                                     <div class="center" data-aos="fade-up" data-aos-delay="600">
-                                        <a href="<?=esc_url(get_permalink(get_the_ID()));?>" class="waves-effect waves-light btn-small">
+                                        <a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>" class="waves-effect waves-light btn-small">
                                             <i class="material-icons right">navigate_next</i>
-                                            <?=__('More', 'futura');?>
+                                            <?php echo __('More', 'futura'); ?>
                                         </a>
                                     </div>
                                 </div>
@@ -113,7 +113,7 @@ get_header(); ?>
 
                         <?php if ($parallax_image_primary_title = get_theme_mod("parallax_image_primary_title")): ?>
                             <h3 class="header h5 col s12 light" data-aos="zoom-in">
-                                <?=$parallax_image_primary_title;?>
+                                <?php echo $parallax_image_primary_title; ?>
                             </h3>
                         <?php endif;?>
 
@@ -123,7 +123,7 @@ get_header(); ?>
 
             <?php if ($parallax_image_primary = esc_url(get_theme_mod("parallax_image_primary"))): ?>
                 <div class="parallax">
-                    <img src="<?=$parallax_image_primary?>" alt="<?=$parallax_image_primary_title;?>" />
+                    <img src="<?php echo $parallax_image_primary; ?>" alt="<?php echo $parallax_image_primary_title; ?>" />
                 </div>
             <?php endif; ?>
         </div>
@@ -136,17 +136,17 @@ get_header(); ?>
 
                             <div class="col s12">
                                 <h4 class="center" data-aos="fade-up" data-aos-delay="200">
-                                    <?=get_the_title();?>
+                                    <?php echo get_the_title(); ?>
                                 </h4>
 
                                 <p class="light" data-aos="fade-up" data-aos-delay="400">
-                                    <?=futura_get_excerpt(100);?>
+                                    <?php echo futura_get_excerpt(100); ?>
                                 </p>
 
                                 <div class="center">
-                                    <a href="<?=esc_url(get_permalink(get_the_ID()));?>" class="waves-effect waves-light btn-small" data-aos="fade-up" data-aos-delay="600">
+                                    <a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>" class="waves-effect waves-light btn-small" data-aos="fade-up" data-aos-delay="600">
                                         <i class="material-icons right">navigate_next</i>
-                                        <?=__('More', 'futura');?>
+                                        <?php echo __('More', 'futura'); ?>
                                     </a>
                                 </div>
                             </div>
@@ -163,7 +163,7 @@ get_header(); ?>
 
                         <?php if ($parallax_image_secondary_title = get_theme_mod("parallax_image_secondary_title")): ?>
                             <h3 class="header h5 col s12 light" data-aos="zoom-in">
-                                <?=$parallax_image_secondary_title;?>
+                                <?php echo $parallax_image_secondary_title; ?>
                             </h3>
                         <?php endif;?>
 
@@ -173,7 +173,7 @@ get_header(); ?>
 
             <?php if ($parallax_image_secondary = esc_url(get_theme_mod("parallax_image_secondary"))): ?>
                 <div class="parallax">
-                    <img src="<?=$parallax_image_secondary?>" alt="<?=$parallax_image_secondary_title;?>" />
+                    <img src="<?php echo $parallax_image_secondary; ?>" alt="<?php echo $parallax_image_secondary_title; ?>" />
                 </div>
             <?php endif; ?>
         </div>

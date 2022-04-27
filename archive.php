@@ -4,7 +4,7 @@
         <div class="container container-fluid">
             <div class="section">
                 <div class="row">
-                    <div class="col s12 <?=(is_active_sidebar('sidebar') ? 'm8' : ''); ?>">
+                    <div class="col s12 <?php echo (is_active_sidebar('sidebar') ? 'm8' : ''); ?>">
                         <?php $post = $posts[0];
                             // Hack. Set $post so that the_date() works.
                             /* If this is a category archive */

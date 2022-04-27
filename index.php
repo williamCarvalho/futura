@@ -4,7 +4,7 @@
         <div class="container container-fluid">
             <div class="section">
                 <div class="row">
-                    <div class="col s12 <?=(is_active_sidebar('sidebar') ? 'm8' : ''); ?>">
+                    <div class="col s12 <?php echo (is_active_sidebar('sidebar') ? 'm8' : ''); ?>">
                         <?php while (have_posts()) : the_post(); ?>
 
                             <div class="row">
@@ -22,12 +22,12 @@
                                     </p>
 
                                     <p class="light">
-                                        <?=futura_get_excerpt(55);?>
+                                        <?php echo futura_get_excerpt(55); ?>
                                     </p>
 
                                     <br />
-                                    <a href="<?=esc_url(the_permalink());?>" class="waves-effect waves-light btn-small teal lighten-1">
-                                        <?=__('Read More', 'futura');?>
+                                    <a href="<?php echo esc_url(the_permalink()); ?>" class="waves-effect waves-light btn-small teal lighten-1">
+                                        <?php echo __('Read More', 'futura'); ?>
                                     </a>
 
                                 </article>

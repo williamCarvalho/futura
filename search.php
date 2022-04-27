@@ -4,7 +4,7 @@
         <div class="container container-fluid">
             <div class="section">
                 <div class="row">
-                    <div class="col s12 <?=(is_active_sidebar('sidebar') ? 'm8' : ''); ?>">
+                    <div class="col s12 <?php echo (is_active_sidebar('sidebar') ? 'm8' : ''); ?>">
 
                         <div class="form-wrapper" data-aos="fade-up" data-aos-delay="200">
                             <?php get_search_form(); ?>
@@ -40,12 +40,12 @@
                                         <?php endif; ?>
 
                                         <p class="light" data-aos="fade-up" data-aos-delay="1000">
-                                            <?=futura_get_excerpt(55);?>
+                                            <?php echo futura_get_excerpt(55); ?>
                                         </p>
 
                                         <br />
-                                        <a href="<?=esc_url(the_permalink());?>" class="waves-effect waves-light btn-small teal lighten-1" data-aos="fade-up" data-aos-delay="1200">
-                                            <?=__('Read More', 'futura');?>
+                                        <a href="<?php echo esc_url(the_permalink()); ?>" class="waves-effect waves-light btn-small teal lighten-1" data-aos="fade-up" data-aos-delay="1200">
+                                            <?php echo __('Read More', 'futura'); ?>
                                         </a>
 
                                     </article>
@@ -70,8 +70,8 @@
 
                             <div class="row">
                                 <div class="col s12 center-align" data-aos="fade-up" data-aos-delay="1000">
-                                    <a href="<?=get_home_url();?>">
-                                        <?=__( 'Back to home page', 'futura');?>
+                                    <a href="<?php echo get_home_url(); ?>">
+                                        <?php echo __( 'Back to home page', 'futura'); ?>
                                         <br />
                                         <span class="material-icons">home</span>
                                     </a>

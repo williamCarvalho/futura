@@ -117,11 +117,11 @@
             $wp_customize->add_control('theme_header_select', array(
                 'type' => 'select',
                 'section' => 'futura_options',
-                'label' => __('Header type'),
+                'label' => __('Header type', 'futura'),
                 'description' => '',
                 'choices' => array(
-                    'banner' => __('Banner'),
-                    'carousel' => __('Carousel')
+                    'banner' => __('Banner', 'futura'),
+                    'carousel' => __('Carousel', 'futura')
                 ),
             ));
 
@@ -339,8 +339,8 @@
         function futura_password_form() {
             global $post;
             $label = 'pwbox-' . (empty( $post->ID ) ? rand() : $post->ID);
-            $action = esc_url(site_url( 'wp-login.php?action=postpass', 'login_post'));
-            $button_value = esc_attr_x( 'Enter', 'post password form' );
+            $action = esc_url(site_url('wp-login.php?action=postpass', 'login_post'));
+            $button_value = esc_attr_x('Submit', 'post password form', 'futura');
             $content_text = __('This content is password protected. This is a custom message. To view it please enter your password below:', 'futura');
             $placeholder =  __('Password', 'futura');
 
@@ -356,11 +356,6 @@
                             </div>
                         </div>
                     </form>";
-            // $output = '
-            //         <form action="' . $action . '" class="form-inline post-password-form" method="post">
-            //             <p>' . __( 'This content is password protected. This is a custom message. To view it please enter your password below:' ) . '</p>
-            //             <label for="' . $label . '">' . __( 'Password:' ) . ' <input name="post_password" id="' . $label . '" type="password" size="20" class="form-control" /></label><button type="submit" name="Submit" class="button-primary">' . $button_value . '</button>
-            //         </form>';
 
             return $output;
         }
@@ -432,8 +427,42 @@
                 'total'              => $wp_query->max_num_pages,
                 'type'               => 'array',
                 'mid_size'           => 10,
-                'prev_text'          => __('<i class="material-icons">chevron_left</i>'),
-                'next_text'          => __('<i class="material-icons">chevron_right</i>'),
+                'prev_text'          => '<i class="material-icons">chevron_left</i>',
+                'next_text'          => '<i class="material-icons">chevron_right</i>',
+            ));
+
+            echo '<div class="row">
+                    <div class="col s12">
+                        <ul class="pagination">';
+            if (is_array($pages)) {
+                foreach ($pages as $page) {
+                    if (strpos($page, '<span') === false) {
+                        echo '<li class="waves-effect" data-aos="fade-up" data-aos-delay="700">' . $page . '</li>';
+                    } else {
+                        $page = str_replace('<span', '<a href="#"', $page);
+                        $page = str_replace('</span>', '</a>', $page);
+                        echo '<li class="active teal lighten-1" data-aos="fade-up" data-aos-delay="700">' . $page . '</li>';
+                    }
+        
+                }
+            }
+            echo '      </ul>
+                    </div>
+                </div>';
+        }
+    }
+
+    if (!function_exists('futura_comments_pagination'))
+    {
+        function futura_comments_pagination() {
+            $pages = paginate_comments_links(array(
+                'echo'      => false,
+                'format'    => '?paged=%#%',
+                'current'   => max(1, get_query_var('cpage')),
+                'type'      => 'array',
+                'mid_size'  => 10,
+                'prev_text' => '<i class="material-icons">chevron_left</i>',
+                'next_text' => '<i class="material-icons">chevron_right</i>',
             ));
 
             echo '<div class="row">

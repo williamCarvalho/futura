@@ -4,7 +4,7 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <h1 class="header center teal-text text-lighten-2" data-aos="zoom-in" data-aos-delay="250">
-                    <?=get_the_title($post->ID);?>
+                    <?php echo get_the_title($post->ID); ?>
                 </h1>
             </div>
         </div>
@@ -12,7 +12,7 @@
         <?php if (has_post_thumbnail($post->ID)) :
             $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');?>
             <div class="parallax">
-                <img src="<?=$large_image_url[0]?>" alt="<?=get_the_title($post->ID);?>" />
+                <img src="<?php echo $large_image_url[0]; ?>" alt="<?php echo get_the_title($post->ID); ?>" />
             </div>
         <?php endif; ?>
     </div>
@@ -21,7 +21,7 @@
         <div class="container container-fluid">
             <div class="section">
                 <div class="row">
-                    <div class="col s12 <?=(is_active_sidebar('sidebar') ? 'm8' : ''); ?>">
+                    <div class="col s12 <?php echo (is_active_sidebar('sidebar') ? 'm8' : ''); ?>">
 					    <?php while (have_posts()) : the_post(); ?>
 
                             <div class="row">

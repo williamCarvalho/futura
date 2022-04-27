@@ -4,7 +4,7 @@
         <div class="container container-fluid">
             <div class="section">
                 <div class="row">
-                    <div class="col s12 <?=(is_active_sidebar('sidebar') ? 'm8' : ''); ?>">
+                    <div class="col s12 <?php echo (is_active_sidebar('sidebar') ? 'm8' : ''); ?>">
                         <article>
                             <h1 class="h5" data-aos="fade-up" data-aos-delay="200">
                                 <?php the_title(); ?>
@@ -21,16 +21,16 @@
                                 $att_image_alt = get_post_meta($post->ID, '_wp_attachment_image_alt', true); ?>
 
                                 <p class="attachment" data-aos="fade-up" data-aos-delay="400">
-                                    <a href="<?=esc_url(wp_get_attachment_url($post->id)); ?>" title="<?php the_title(); ?>" rel="attachment">
-                                        <img src="<?=$att_image[0];?>" width="<?=$att_image[1];?>" height="<?=$att_image[2];?>" class="attachment-medium" alt="<?=$att_image_alt;?>" />
+                                    <a href="<?php echo esc_url(wp_get_attachment_url($post->id)); ?>" title="<?php the_title(); ?>" rel="attachment">
+                                        <img src="<?php echo $att_image[0]; ?>" width="<?php echo $att_image[1]; ?>" height="<?php echo $att_image[2]; ?>" class="attachment-medium" alt="<?php echo $att_image_alt; ?>" />
                                     </a>
                                 </p>
 
                             <?php else : ?>
 
                                 <p class="attachment" data-aos="fade-up" data-aos-delay="400">
-                                    <a href="<?=esc_url(wp_get_attachment_url($post->ID)) ?>" title="<?=esc_html( get_the_title($post->ID), 1 ) ?>" rel="attachment">
-                                        <?=basename($post->guid); ?>
+                                    <a href="<?php echo esc_url(wp_get_attachment_url($post->ID)); ?>" title="<?php echo esc_html( get_the_title($post->ID), 1 ); ?>" rel="attachment">
+                                        <?php echo basename($post->guid); ?>
                                     </a>
                                 </p>
 
@@ -39,7 +39,7 @@
                             <?php if (!empty($post->post_excerpt)): ?>
                                 <p data-aos="fade-up" data-aos-delay="500">
                                     <small>
-                                        <?=get_the_excerpt();?>
+                                        <?php echo get_the_excerpt(); ?>
                                     </small>
                                 </p>
                             <?php endif; ?>
@@ -53,7 +53,7 @@
                                     <small class="valign-wrapper">
                                         <?php if ($author = get_the_author()) : ?>
                                             <strong>
-                                                <?=$author;?>
+                                                <?php echo $author; ?>
                                             </strong>
                                             <br />
                                         <?php endif;?>

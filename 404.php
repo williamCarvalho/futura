@@ -4,7 +4,7 @@
         <div class="container container-fluid">
             <div class="section">
                 <div class="row">
-                    <div class="col s12 <?=(is_active_sidebar('sidebar') ? 'm8' : ''); ?>">
+                    <div class="col s12 <?php echo (is_active_sidebar('sidebar') ? 'm8' : ''); ?>">
                         <article class="center">
                             <h1 class="h5" data-aos="fade-up" data-aos-delay="200">
                                 <?php _e('Oops! Nothing to see here...', 'futura'); ?>
@@ -20,8 +20,8 @@
 
                         <div class="row">
                             <div class="col s12 center-align" data-aos="fade-up" data-aos-delay="800">
-                                <a href="<?=get_home_url();?>">
-                                    <?=__( 'Back to home page', 'futura');?>
+                                <a href="<?php echo get_home_url(); ?>">
+                                    <?php echo __('Back to home page', 'futura'); ?>
                                     <br />
                                     <span class="material-icons">home</span>
                                 </a>

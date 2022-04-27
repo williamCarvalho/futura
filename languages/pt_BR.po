@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Futura Develop\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-09 23:58+0000\n"
-"PO-Revision-Date: 2022-04-10 00:20+0000\n"
+"PO-Revision-Date: 2022-04-26 23:22+0000\n"
 "Last-Translator: \n"
 "Language-Team: Português do Brasil\n"
 "Language: pt_BR\n"
@@ -29,13 +29,21 @@ msgstr "1 comentário"
 msgid "Archive: %s"
 msgstr "Arquivo: %s"
 
-#: 404.php:22 search.php:67
+#: 404.php:24 search.php:74
 msgid "Back to home page"
 msgstr "Voltar a página inicial"
 
-#: comments.php:103
+#: functions.php:123
+msgid "Banner"
+msgstr "Banner"
+
+#: comments.php:106
 msgid "Cancel comment"
 msgstr "Cancelar comentário"
+
+#: functions.php:124
+msgid "Carousel"
+msgstr "Carrossel"
 
 #: archive.php:12
 #, php-format
@@ -46,26 +54,26 @@ msgstr "Categoria: %s"
 msgid "Comment"
 msgstr "Comentário"
 
-#: comments.php:115
+#: comments.php:118
 msgid "Comments are closed."
 msgstr "Comentários estão fechados."
 
-#: archive.php:50 attachment.php:13 index.php:18 page.php:31 search.php:28
-#: single.php:29
+#: archive.php:52 attachment.php:15 index.php:18 page.php:33 search.php:32
+#: single.php:32
 msgid "Edit"
 msgstr "Editar"
 
-#: functions.php:134
+#: functions.php:148
 msgid "Footer description"
 msgstr "Descrição do rodapé"
 
-#: functions.php:123
+#: functions.php:134
 msgid "Footer title"
 msgstr "Título do rodapé"
 
 #. Name of the theme
-msgid "Futura Develop"
-msgstr "Futura Develop"
+msgid "Futura"
+msgstr "Futura"
 
 #. Description of the theme
 msgid ""
@@ -75,15 +83,27 @@ msgstr ""
 "FUTURA é um tema limpo e objetivo baseado em Materialize. Tipografia simples "
 "e direta, legível em uma ampla variedade de tamanhos de tela."
 
-#: functions.php:246
+#: functions.php:265
 msgid "Futura Meta Box"
 msgstr "Futura Meta Box"
 
-#: functions.php:99
+#: functions.php:107
 msgid "Futura theme options"
 msgstr "Futura opções de temas"
 
-#: 404.php:13 archive.php:63
+#: functions.php:120
+msgid "Header type"
+msgstr "Tipo de cabeçalho"
+
+#. Author URI of the theme
+msgid "https://github.com/williamCarvalho"
+msgstr "https://github.com/williamCarvalho"
+
+#. URI of the theme
+msgid "https://github.com/williamCarvalho/futura"
+msgstr "https://github.com/williamCarvalho/futura"
+
+#: 404.php:13 archive.php:69
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "Parece que nada foi encontrado por aqui. Que tal tentar uma pesquisa?"
 
@@ -91,16 +111,16 @@ msgstr "Parece que nada foi encontrado por aqui. Que tal tentar uma pesquisa?"
 msgid "Leave a comment!"
 msgstr "Deixe um comentário!"
 
-#: functions.php:82
+#: functions.php:90
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: landing_page.php:30 landing_page.php:62 landing_page.php:99
-#: landing_page.php:150
+#: landing_page.php:30 landing_page.php:62 landing_page.php:98
+#: landing_page.php:149
 msgid "More"
 msgstr "Mais"
 
-#: page.php:42 single.php:44
+#: page.php:49 single.php:54
 msgid "Next"
 msgstr "Próximo"
 
@@ -112,35 +132,44 @@ msgstr "Sem comentários"
 msgid "Oops! Nothing to see here..."
 msgstr "Ops! Nada para ver aqui..."
 
-#: search.php:58
+#: search.php:66
 msgid "Oops! Nothing to see here... Try searching again!"
 msgstr "Ops! Nada para ver aqui... Tente pesquisar novamente!"
 
-#: functions.php:144
+#: functions.php:158
 msgid "Parallax image"
 msgstr "Imagem parallax"
 
-#: functions.php:163
+#: functions.php:180
 msgid "Parallax image primary"
 msgstr "Imagem parallax primária"
 
-#: functions.php:151
+#: functions.php:168
 msgid "Parallax image primary title"
 msgstr "Título da imagem parallax primária"
 
-#: functions.php:183
+#: functions.php:203
 msgid "Parallax image secondary"
 msgstr "Imagem parallax secundária"
 
-#: functions.php:171
+#: functions.php:191
 msgid "Parallax image secondary title"
 msgstr "Título da imagem parallax secundária"
 
-#: page.php:43 single.php:45
+#: functions.php:345
+msgid "Password"
+msgstr "Senha"
+
+#: functions.php:343
+msgctxt "post password form"
+msgid "Submit"
+msgstr "Enviar"
+
+#: page.php:50 single.php:55
 msgid "Previous"
 msgstr "Anterior"
 
-#: functions.php:83
+#: functions.php:91
 msgid "Primary Footer Menu"
 msgstr "Menu de rodapé principal"
 
@@ -148,11 +177,11 @@ msgstr "Menu de rodapé principal"
 msgid "Proudly powered by"
 msgstr "Orgulhosamente criado por"
 
-#: index.php:30 search.php:40
+#: index.php:30 search.php:48
 msgid "Read More"
 msgstr "Leia mais"
 
-#: functions.php:203
+#: functions.php:222
 msgid "Right sidebar"
 msgstr "Barra lateral direita"
 
@@ -160,16 +189,16 @@ msgstr "Barra lateral direita"
 msgid "Search"
 msgstr "Pesquisa"
 
-#: search.php:13
+#: search.php:15
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Resultados da pesquisa para: %s"
 
-#: functions.php:84
+#: functions.php:92
 msgid "Secondary Footer Menu"
 msgstr "Menu de Rodapé Secundário"
 
-#: functions.php:202
+#: functions.php:221
 msgid "Sidebar"
 msgstr "Barra lateral"
 
@@ -177,13 +206,21 @@ msgstr "Barra lateral"
 msgid "Submit"
 msgstr "Enviar"
 
-#: functions.php:334
+#: functions.php:403
 msgid "Subtitle"
 msgstr "Legenda"
 
 #: comments.php:13
 msgid "This article is restricted. Enter the password to view comments."
 msgstr "Este artigo é restrito. Digite a senha para ver os comentários."
+
+#: functions.php:344
+msgid ""
+"This content is password protected. This is a custom message. To view it "
+"please enter your password below:"
+msgstr ""
+"Este conteúdo é protegido por senha. Esta mensagem é personalizada. Para "
+"visualizá-lo, digite sua senha abaixo:"
 
 #. Author of the theme
 msgid "Will Carvalho"

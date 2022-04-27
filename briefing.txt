@@ -1,4 +1,0 @@
-https://make.wordpress.org/themes/handbook/review/
-https://applerinquest.com/how-to-add-custom-fields-to-your-wordpress/
-
-https://wordpress.stackexchange.com/questions/1051/how-to-retrieve-an-image-attachments-alt-text
