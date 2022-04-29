@@ -56,10 +56,15 @@ Copyright 2014-2022
 Licensed under the MIT license
 Source: https://materializecss.com
 
-== Changelog==
-= 2.0 =
-* Changed front-end framework to Materialize
-* Added Animate On Scroll Library
-* Added Material Icons
-* Changed font-family to Montserrat
-* Removed support for IE11 and below
+== Changelog ==
+= 2.0.1 - 2022-04-29 =
+* [Feat] Optmized readme file
+* [Fix] Added ID and class to attachment file
+* [Fix] Added Stable tag
+
+= 2.0.0 - 2022-04-26 =
+* [Feat] Changed front-end framework to Materialize
+* [Feat] Added Animate On Scroll Library
+* [Feat] Added Material Icons
+* [Feat] Changed font-family to Montserrat
+* [Feat] Removed support for IE11 and below
