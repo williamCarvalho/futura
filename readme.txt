@@ -1,19 +1,21 @@
-=== Futura ===
-Contributors: Will Carvalho
-Requires at least: WordPress 4.4
-Tested up to: WordPress 4.4
-Version: 1.5
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: two-columns, right-sidebar, fluid-layout, responsive-layout, flexible-header, custom-menu, editor-style, featured-images, full-width-template, threaded-comments
+=== FUTURA ===
+Contributors: william-carvalho
+Requires at least: WordPress 5.9
+Tested up to: WordPress 5.9
+Requires PHP: 7.0
+Version: 2.0
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: two-columns, right-sidebar, fluid-layout, flexible-header, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, accessibility-ready, custom-logo
+Stable tag: trunk
 
-Futura WordPress Theme, Copyright (C) 2016, Will Carvalho
-Futura is distributed under the terms of the GNU GPL
+Futura WordPress Theme, Copyright (C) 2016 - 2022, Will Carvalho
+Futura is distributed under the terms of the GNU GPL v3.0 or later.
 
 == Description ==
 Futura is a free WordPress theme designed by Will Carvalho in Sao Paulo, Brazil.
 Feel free to use, modify and redistribute this theme as you like.
-Futura is distributed under the terms of the GNU GPL v2.0 or later.
+Futura is distributed under the terms of the GNU GPL v3.0 or later.
 Enjoy!
 
 == Usage ==
@@ -28,31 +30,36 @@ To change certain content on the landing page use the previously created categor
 - Featured Content
 
 == Copyright ==
+Images screenshot.png, futura/img/futura-logo.png, futura/img/futura-logo.png, futura/admin/img/ are creations of Will Carvalho and licensed under GNU GPL v3+
 
-- Images screenshot.png, futura/img/logo.png, futura/img/logo.png, futura/admin/img/ are creations of Will Carvalho and licensed under GPL v2+
-
+== Resources ==
 Futura WordPress Theme bundles the following third-party resources:
 
-The HTML5 Shiv,
-The HTML5 Shiv are licensed under the terms of the GNU GPL, Version 2 (or later) and MIT license
-Source: https://github.com/aFarkas/html5shiv
+= Montserrat =
+Montserrat are licensed under the Open Font License.
+Source: https://fonts.google.com/specimen/Montserrat
 
-Respond.js, Copyright 2011
-Respond.js are licensed under the terms of the MIT license
-Source: https://github.com/scottjehl/Respond
+= Material Icons =
+Material Icons are licensed under the  Apache License 2.0.
+Source: https://fonts.google.com/icons
 
-Josefin Slab font,
-Genericons are licensed under the terms of the OFL SIL Open Font License, 1.1
-Source: https://www.google.com/fonts/specimen/Josefin+Slab
+= AOS =
+Animate On Scroll Library are licensed under the terms of the MIT license
+Source: https://github.com/michalsnik/aos
 
-wp-bootstrap-navwalker,
-wp-bootstrap-navwalker are licensed under the terms of the GNU GPL, Version 2 (or later)
-Source: https://github.com/twittem/wp-bootstrap-navwalker
+= wp-materialize-walker-nav-menu =
+wp-materialize-walker-nav-menu are licensed under the terms of the GNU GPL, Version 3 (or later)
+Source: https://github.com/syedabuthahirm/wp-materialize-walker-nav-menu
 
-WP Bootstrap Comment Walker,
-WP Bootstrap Comment Walker are licensed under the terms of the GNU GPL, Version 2 (or later)
-Source: https://github.com/ediamin/wp-bootstrap-comment-walker
-
-Bootstrap, Copyright 2011-2015
+= Materialize =
+Copyright 2014-2022
 Licensed under the MIT license
-Source: http://getbootstrap.com
+Source: https://materializecss.com
+
+== Changelog==
+= 2.0 =
+* Changed front-end framework to Materialize
+* Added Animate On Scroll Library
+* Added Material Icons
+* Changed font-family to Montserrat
+* Removed support for IE11 and below

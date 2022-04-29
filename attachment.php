@@ -5,7 +5,7 @@
             <div class="section">
                 <div class="row">
                     <div class="col s12 <?php echo (is_active_sidebar('sidebar') ? 'm8' : ''); ?>">
-                        <article>
+                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                             <h1 class="h5" data-aos="fade-up" data-aos-delay="200">
                                 <?php the_title(); ?>
                             </h1>
