@@ -3,7 +3,7 @@ Contributors: william-carvalho
 Requires at least: WordPress 5.9
 Tested up to: WordPress 5.9
 Requires PHP: 7.0
-Version: 2.0
+Version: 2.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: two-columns, right-sidebar, fluid-layout, flexible-header, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, accessibility-ready, custom-logo
