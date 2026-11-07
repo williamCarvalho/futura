@@ -1,15 +1,15 @@
 === FUTURA ===
 Contributors: william-carvalho
-Requires at least: WordPress 5.9
-Tested up to: WordPress 5.9
+Requires at least: 6.0
+Tested up to: 7.1
 Requires PHP: 7.0
 Version: 2.0.1
-License: GPLv3 or later
+License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: two-columns, right-sidebar, fluid-layout, flexible-header, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, accessibility-ready, custom-logo
 Stable tag: trunk
 
-Futura WordPress Theme, Copyright (C) 2016 - 2022, Will Carvalho
+Futura WordPress Theme, Copyright (C) 2016 - 2026, Will Carvalho
 Futura is distributed under the terms of the GNU GPL v3.0 or later.
 
 == Description ==
