@@ -19,7 +19,9 @@ add_action('after_setup_theme', 'futura_setup');
 if (!function_exists('futura_nav_class')) {
     function futura_nav_class($atts, $item, $args)
     {
-        if (in_array($args->theme_location, array(
+        $theme_location = is_object($args) ? ($args->theme_location ?? '') : (is_array($args) ? ($args['theme_location'] ?? '') : '');
+
+        if (in_array($theme_location, array(
             'footer-1',
             'footer-2'
         ))) {
@@ -381,9 +383,10 @@ add_action('save_post', 'futura_save_meta_box');
 if (!function_exists('futura_menu_atts')) {
     function futura_menu_atts($atts, $item, $args)
     {
+        $theme_location = is_object($args) ? ($args->theme_location ?? '') : (is_array($args) ? ($args['theme_location'] ?? '') : '');
         $menu_locations = array('footer-1', 'footer-2');
 
-        if (in_array($args->theme_location, $menu_locations)) {
+        if (in_array($theme_location, $menu_locations)) {
             $atts['data-aos'] = 'zoom-in';
             $atts['data-aos-delay'] = $item->menu_order * 500;
         }
