@@ -6,7 +6,7 @@ Requires PHP: 7.0
 Version: 2.0.1
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Tags: two-columns, right-sidebar, fluid-layout, flexible-header, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, accessibility-ready, custom-logo
+Tags: two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, custom-logo
 Stable tag: trunk
 
 Futura WordPress Theme, Copyright (C) 2016 - 2026, Will Carvalho

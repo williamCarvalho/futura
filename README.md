@@ -6,7 +6,7 @@ Tested up to: 7.1 <br />
 Version: 2.0.1 <br />
 License: GNU General Public License v3 or later <br />
 License URI: http://www.gnu.org/licenses/gpl-3.0.html <br />
-Tags: two-columns, right-sidebar, fluid-layout, flexible-header, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, accessibility-ready, custom-logo <br /> <br />
+Tags: two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, custom-logo <br /> <br />
 
 Futura WordPress Theme, Copyright (C) 2016 - 2022, Will Carvalho <br />
 Futura is distributed under the terms of the GNU GPL v3.0 or later.

@@ -3,20 +3,20 @@ msgstr ""
 "Project-Id-Version: Futura Develop\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-09 23:58+0000\n"
-"PO-Revision-Date: 2022-04-26 23:22+0000\n"
+"PO-Revision-Date: 2026-11-07 13:59-0300\n"
 "Last-Translator: \n"
 "Language-Team: Português do Brasil\n"
 "Language: pt_BR\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.10\n"
 "X-Loco-Version: 2.6.1; wp-5.9.3\n"
-"X-Domain: futura"
+"X-Domain: futura\n"
 
 #: comments.php:25
-#, php-format
+#, no-php-format
 msgid "% comments"
 msgstr "% comentários"
 
@@ -77,8 +77,8 @@ msgstr "Futura"
 
 #. Description of the theme
 msgid ""
-"FUTURA is a clean and objective theme based on Materialize. Simple and "
-"direct typography, readable in a wide variety of screen sizes."
+"FUTURA is a clean and objective theme based on Materialize. Simple and direct "
+"typography, readable in a wide variety of screen sizes."
 msgstr ""
 "FUTURA é um tema limpo e objetivo baseado em Materialize. Tipografia simples "
 "e direta, legível em uma ampla variedade de tamanhos de tela."
@@ -237,3 +237,20 @@ msgstr "Seu nome"
 #: comments.php:88
 msgid "Your Website URL"
 msgstr "URL do seu site"
+
+#: functions.php
+msgid "Hero Callout Futura"
+msgstr "Hero Callout Futura"
+
+#: functions.php
+msgctxt "Block pattern description"
+msgid ""
+msgstr "Uma seção de destaque estilo hero para o topo das páginas."
+
+#: functions.php
+msgid "Card Materialize"
+msgstr "Card Materialize"
+
+#: functions.php
+msgid "Applies a card-style look with a subtle shadow, inspired by Materialize."
+msgstr "Aplica um visual de card com leve sombra inspirado no Materialize."

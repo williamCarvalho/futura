@@ -52,6 +52,20 @@ if (!function_exists('futura_enqueue')) {
 }
 add_action("wp_enqueue_scripts", "futura_enqueue");
 
+/**
+ * Queue nested comments
+ */
+
+if (!function_exists('futura_enqueue_comments_reply')) {
+    function futura_enqueue_comments_reply()
+    {
+        if (is_singular() && comments_open() && get_option('thread_comments')) {
+            wp_enqueue_script('comment-reply');
+        }
+    }
+}
+add_action('wp_enqueue_scripts', 'futura_enqueue_comments_reply');
+
 
 /**
  * Set theme default setup
@@ -387,7 +401,7 @@ if (!function_exists('futura_password_form')) {
     {
         global $post;
         $label = 'pwbox-' . (empty($post->ID) ? rand() : $post->ID);
-        $action = esc_url(site_url('wp-login.php?action=postpass', 'login_post'));
+        $action = esc_url(home_url('wp-login.php?action=postpass', 'login_post'));
         $button_value = esc_attr_x('Submit', 'post password form', 'futura');
         $content_text = __('This content is password protected. This is a custom message. To view it please enter your password below:', 'futura');
         $placeholder =  __('Password', 'futura');
