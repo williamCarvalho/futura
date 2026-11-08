@@ -131,7 +131,7 @@ nav.navbar-menu .dropdown-content li.current-menu-item > span {
   color: var(--main-color);
 }
 nav.navbar-menu .nav-wrapper {
-  padding: 0 2em;
+  padding: 0 4em;
 }
 
 .sidenav-trigger {
