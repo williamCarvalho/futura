@@ -3,7 +3,7 @@
 Contributors: Will Carvalho - @william-carvalho <br />
 Requires at least: 6.0 <br />
 Tested up to: 7.1 <br />
-Version: 2.0.2 <br />
+Version: 2.0.3 <br />
 License: GNU General Public License v3 or later <br />
 License URI: http://www.gnu.org/licenses/gpl-3.0.html <br />
 Tags: two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, custom-logo <br /> <br />
@@ -66,6 +66,11 @@ Licensed under the MIT license
 Source: https://materializecss.com
 
 ## Changelog
+
+### 2.0.3 - 2026-11-08
+
+- [Refactor] implement automatic creation of the categories used on the landing page
+- [Fix] Fix menu display and animations
 
 ### 2.0.2 - 2026-11-07
 
