@@ -15,7 +15,7 @@
 
     <div id="menu" class="scrollspy">
         <nav class="navbar-menu white" role="navigation">
-            <div class="nav-wrapper container">
+            <div class="nav-wrapper">
                 <a class="brand-logo" href="<?php echo esc_url(home_url()); ?>">
                     <?php if ($header_imag = get_header_image()) {
                         echo '<img src="' . esc_url($header_imag) . '" alt="' . get_bloginfo('name') . '"  data-aos="fade-zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" />';
@@ -34,7 +34,8 @@
                         'depth'          =>  0,
                         'container'      => 'div',
                         'menu_class'     => 'right hide-on-med-and-down',
-                        'walker'         => new WP_Materialize_Navwalker()
+                        'walker'         => new WP_Materialize_Navwalker(),
+                        'fallback_cb'    => false
                     )
                 );
                 ?>
@@ -49,7 +50,8 @@
                             'depth'          =>  0,
                             'container'      => 'div',
                             'menu_class'     => 'collapsible',
-                            'walker'         => new WP_Materialize_Navwalker()
+                            'walker'         => new WP_Materialize_Navwalker(),
+                            'fallback_cb'    => false
                         )
                     );
                     ?>

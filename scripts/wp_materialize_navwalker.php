@@ -189,7 +189,7 @@ class WP_Materialize_Navwalker extends Walker
         $id = $id ? ' id="' . esc_attr($id) . '"' : '';
 
         $data_aos = " data-aos='fade-zoom-in' "; // animations
-        $data_aos_delay = " data-aos-delay='" . $this->menu_index * 200 . "' "; // values from 0 to 3000, with step 50ms
+        $data_aos_delay = " data-aos-delay='" . ($this->menu_index + 1) * 50 . "' "; // values from 0 to 3000, with step 50ms
         $data_aos_easing = " data-aos-easing='ease-in-back' "; // default easing for AOS animations
         $data_aos_offset = ""; // offset (in px) from the original trigger point
         $data_aos_duration = ""; // values from 0 to 3000, with step 50ms
@@ -211,7 +211,7 @@ class WP_Materialize_Navwalker extends Walker
         }
         $atts['aria-current'] = $menu_item->current ? 'page' : '';
 
-        $has_children = (is_object($args) && isset($args->has_children)) ? $args->has_children : false;
+        $has_children = in_array('menu-item-has-children', $classes);
         if ($has_children && $depth === 0) {
             if (in_array("collapsible", explode(' ', $args->menu_class))) {
                 $this->submenu_css_class = 'collapsible-body';
@@ -219,12 +219,12 @@ class WP_Materialize_Navwalker extends Walker
             } else {
                 $this->submenu_css_class = 'dropdown-content';
                 $this->submenu_id = 'dropdown-' . uniqid();
-                $atts['href']           = '#';
-                $atts['data-target']    = $this->submenu_id;
-                $atts['class']            = 'dropdown-trigger';
+                $atts['href']        = '#';
+                $atts['data-target'] = $this->submenu_id;
+                $atts['class']       = 'dropdown-trigger';
             }
         } else {
-            $atts['href']         = ! empty($menu_item->url) ? $menu_item->url : '';
+            $atts['href'] = ! empty($menu_item->url) ? $menu_item->url : '';
         }
 
         $this->menu_index++;

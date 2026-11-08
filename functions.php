@@ -378,6 +378,40 @@ if (!function_exists('futura_save_meta_box')) {
 add_action('save_post', 'futura_save_meta_box');
 
 /**
+ * Creates the theme categories
+ */
+if (!function_exists('futura_default_categories')) {
+    function futura_default_categories()
+    {
+        if (get_option('futura_categories_created')) {
+            return;
+        }
+
+        $default_categories = array(
+            'Featured Header',
+            'Featured Main',
+            'Featured Parallex',
+            'Featured Content'
+        );
+
+        foreach ($default_categories as $cat_name) {
+            if (! term_exists($cat_name, 'category')) {
+                wp_insert_term(
+                    $cat_name,
+                    'category',
+                    array(
+                        'slug' => sanitize_title($cat_name)
+                    )
+                );
+            }
+        }
+
+        update_option('futura_categories_created', true);
+    }
+}
+add_action('admin_init', 'futura_default_categories');
+
+/**
  * Custom link menu attributes
  */
 if (!function_exists('futura_menu_atts')) {
@@ -388,7 +422,7 @@ if (!function_exists('futura_menu_atts')) {
 
         if (in_array($theme_location, $menu_locations)) {
             $atts['data-aos'] = 'zoom-in';
-            $atts['data-aos-delay'] = $item->menu_order * 500;
+            $atts['data-aos-delay'] = ($item->menu_order + 1) * 100;
         }
 
         return $atts;
