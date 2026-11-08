@@ -388,7 +388,7 @@ if (!function_exists('futura_menu_atts')) {
 
         if (in_array($theme_location, $menu_locations)) {
             $atts['data-aos'] = 'zoom-in';
-            $atts['data-aos-delay'] = $item->menu_order * 500;
+            $atts['data-aos-delay'] = ($item->menu_order + 1) * 100;
         }
 
         return $atts;

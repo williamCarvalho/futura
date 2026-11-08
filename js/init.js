@@ -8,7 +8,7 @@
         // Add a dropdown list to any button
         $('.dropdown-trigger').dropdown({
             hover: true,
-            constrainWidth: false
+            constrainWidth: true
         });
 
         // Collapsibles are accordion elements that expand when clicked on
